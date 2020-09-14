@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.5.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#p1").hover(function () {
+                    alert("Your Mouse is touched me! press OK now");
+                },
+                function () {
+                    alert("bye!Your Mouse is released me! press OK now");
+                });
+        });
+    </script>
+</head>
+<body>
+
+<p id="p1">Touch and Realse ME.</p>
+
+</body>
+</html>

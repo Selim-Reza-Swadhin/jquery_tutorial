@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.5.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+                $("#div4").fadeIn(3000);
+                $("#div5").fadeToggle("slow");
+                $("#div6").fadeTo("slow", 0.15);
+            });
+        });
+    </script>
+</head>
+
+<body>
+<button>Click to fade boxes</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+<br>
+<div id="div4" style="width:80px;height:80px;display:none;background-color:black;"></div>
+<br>
+<div id="div5" style="width:80px;height:80px;display:none;background-color:yellow;"></div>
+<br>
+<div id="div6" style="width:80px;height:80px;background-color:magenta;"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.5.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle(5000);
+            });
+            $("#stop").click(function () {
+                $("#panel").stop();
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: red;
+            border: solid 1px blue;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button id="stop">Stop sliding</button>
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Selim Computer</div>
+
+</body>
+</html>

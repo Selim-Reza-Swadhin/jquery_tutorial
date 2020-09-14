@@ -1,0 +1,23 @@
+<body onload="doTimer()">
+<script type="text/javascript">
+    let c = 0;
+    let t;
+    let timer_is_on = 0;
+
+    function timedCount() {
+        document.getElementById('txt').value = c;
+        c = c + 1;
+        t = setTimeout("timedCount()", 1000);
+    }
+
+    function doTimer() {
+        if (!timer_is_on) {
+            timer_is_on = 1;
+            timedCount();
+        }
+    }
+</script>
+<br/>
+<form>
+    <input type="text" id="txt" value="time" size="3"><b>Time Count</b>
+</form>

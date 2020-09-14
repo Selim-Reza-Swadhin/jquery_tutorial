@@ -1,0 +1,1 @@
+Hello! This is the magic of jQuery and AJAX
